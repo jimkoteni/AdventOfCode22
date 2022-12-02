@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using System;
+using AdventOfCode22.Day_01;
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine(Day01.Run());
