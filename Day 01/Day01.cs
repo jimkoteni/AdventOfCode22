@@ -1,21 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
 namespace AdventOfCode22.Day_01
 {
-	public static class Day01
+	public class Day01 : DayBase
 	{
-		private static string fileName = "Day 01/input.txt";
-		public static void Run()
-		{
-			Console.WriteLine("--------- Day 01 ---------");
-			Console.WriteLine(GetTop());
-			Console.WriteLine(GetTopThree());
-		}
-
-		private static string GetTop()
+		protected override string RunFirstIssue()
 		{
 			var max = 0;
 
@@ -40,7 +31,7 @@ namespace AdventOfCode22.Day_01
 			return max.ToString();
 		}
 
-		private static string GetTopThree()
+		protected override string RunSecondIssue()
 		{
 			var elves = new List<int>();
 

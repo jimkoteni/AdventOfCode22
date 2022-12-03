@@ -4,18 +4,9 @@ using System.Linq;
 
 namespace AdventOfCode22.Day_02
 {
-	public static class Day02
+	public class Day02 : DayBase
 	{
-		private static string fileName = "Day 02/input.txt";
-		
-		public static void Run()
-		{
-			Console.WriteLine("--------- Day 02 ---------");
-			Console.WriteLine(RunFirstIssue());
-			Console.WriteLine(RunSecondIssue());
-		}
-
-		private static string RunFirstIssue()
+		protected override string RunFirstIssue()
 		{
 			return File.ReadAllLines(fileName)
 				.Select(item =>
@@ -27,7 +18,7 @@ namespace AdventOfCode22.Day_02
 				.ToString();
 		}
 
-		private static string RunSecondIssue()
+		protected override string RunSecondIssue()
 		{
 			return File.ReadAllLines(fileName)
 				.Select(item =>
