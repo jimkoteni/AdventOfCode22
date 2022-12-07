@@ -26,6 +26,10 @@
       <Content Include="Day 05\input.txt">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
+      <Compile Remove="Day 06\input.txt.cs" />
+      <Content Include="Day 06\input.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
     <ItemGroup>
