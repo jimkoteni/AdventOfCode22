@@ -11,7 +11,7 @@ namespace AdventOfCode22.Day_01
 			var max = 0;
 
 			using var reader = new StreamReader(fileName);
-			string? line;
+			string line;
 			var elf = 0;
 			while ((line = reader.ReadLine()) != null)
 			{
